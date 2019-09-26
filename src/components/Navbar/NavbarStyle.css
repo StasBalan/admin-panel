@@ -1,0 +1,31 @@
+.menu {
+  width: 300px;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between
+}
+
+.menu-items li {
+  list-style: none;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.menu-item::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #27ae60;
+  transition: width .25s;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+}
