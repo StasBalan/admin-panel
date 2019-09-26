@@ -5,7 +5,9 @@ import Header from '../Header';
 const BaseLayout = ({ children }) => (
   <div>
     <Header />
-    { children }
+    <div className='wrapper'>
+      { children }
+    </div> 
   </div>
 );
 
